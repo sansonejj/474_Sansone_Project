@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!-- I understand that this code is written very ineffectively, but it's there to just demonstrate a general idea of how the UI would
+     look and operate at a high level. My intention would be to utilize a database and PHP, using GET and POST statements -->
+<head>
+    <title>911 Computer Aided Dispatch</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+
+<div class="navigation-container">
+
+</div>
+
+<div class="page-header">
+    <h1>Create Incident</h1>
+</div>
+
+<div class="body">
+
+    <p style="font-weight: bold; font-size: large">Call Details</p>
+</div>
+
+<div>
+    <form>
+        <label for="incAddr">Address:</label><input type="text" id="incAddr" name="incAddr">
+        <label for="incType">Incident Type:</label><input type="text" id="incType" name="incType">
+        <label for="priority">Priority:</label><input type="text" id="priority" name="priority"><br>
+        <label for="incComments">Comments:</label><input type="text" id="incComments" name="incComments">
+        <label for="dispatcher">Dispatcher:</label><input type="text" id="dispatcher" name="dispatcher">
+        <label for="police">Police:</label><input type="checkbox" id="police" name="police">
+        <label for="fire">Fire:</label><input type="checkbox" id="fire" name="fire">
+        <label for="ems">EMS:</label><input type="checkbox" id="ems" name="ems"><br><br>
+        <label for="createInc">Create Incident  </label><input type="submit" id="createInc" name="createInc">
+
+    </form>
+</div>
+
+<div class="custom-class1">
+
+</div>
+
+<script src="navigation.js"></script>
+
+</body>
+</html>

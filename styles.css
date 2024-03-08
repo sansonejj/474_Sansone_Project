@@ -1,0 +1,163 @@
+/*Reference: https://www.shecodes.io/athena/34209-how-to-create-root-variables-for-colors-in-css */
+/*Apologies for the messy CSS, Some of the CSS here is recycled from other classes/work i've done. 03/06/2024 JJS */
+/*Reference: https://www.w3schools.com/howto/howto_js_dropdown.asp - I couldn't get this working the way I wanted to, however since
+this is just to represent the user interface I didn't want to get hung up on this and be late*/
+
+:root {
+    --primary-color: #2E87E7; /* title  */
+    --secondary-color: #2ecc71;
+    --background-color: #f0f0f0;
+    --text-color: #333; /* dark grey text */
+    --menu-background: #2c3e50; /* menu background */
+    --menu-text-color: #ecf0f1; /*  menu text */
+    --hover-background-color: #34495e; /* mousehover state */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.system-status {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    margin: 1%;
+    padding: 1%;
+}
+
+
+
+.navigation {
+    background-color: var(--menu-background);
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.navigation a {
+    color: var(--menu-text-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation a:hover, .navigation a:focus {
+    background-color: var(--hover-background-color);
+    color: black;
+}
+
+.page-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.custom-class1 {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+.paragraph, .body, .body_centered {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+nav a {
+    font-weight: 500;
+}
+
+.column {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.bottom-right {
+    margin: 20px;
+}
+
+.custom-class1, .custom-class2, .custom-class3 {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+a, button {
+    transition: background-color 0.3s ease, color 0.3s ease; /*  hover effects transition */
+}
+
+input[type="submit"], button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* round corner for buttons */
+    cursor: pointer; /* change cursor over links */
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* dropdowns */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* sublinks */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+
+}
+
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; /* Ensures links take up full width of dropdown */
+}
+
+
+/* end of dropdowns */

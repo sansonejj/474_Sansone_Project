@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!-- I understand that this code is written very ineffectively, but it's there to just demonstrate a general idea of how the UI would
+     look and operate at a high level. My intention would be to utilize a database and PHP, using GET and POST statements -->
+<head>
+    <title>911 Computer Aided Dispatch</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+
+<div class="navigation-container">
+
+</div>
+
+<div class="page-header">
+    <h1>User Management</h1>
+</div>
+
+<div class="body">
+<!--Reference:https://www.w3schools.com/html/html_forms.asp -->
+    <p style="font-weight: bold; font-size: large">Add New User</p>
+    <form name="addUser" action="" method="POST"> <!-- would use post function to database -->
+        Enter User Details: <br>
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="email">E-Mail Address:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="pswd">Password:</label><br>
+            <input type="text" id="pswd" name="pswd"><br>
+            <label for="confpswd">Confirm Password:</label><br>
+            <input type="text" id="confpswd" name="confpswd"><br>
+
+
+        </form>
+        <p>Select Role</p>
+
+        <input type="checkbox" role="checkbox" value="Dispatcher"> Dispatcher
+        <input type="checkbox" role="checkbox" value="Supervisor"> Supervisor
+        <input type="checkbox" role="checkbox" value="Field Responder"> Field Responder
+        <input type="checkbox" role="checkbox" value="Field Supervisor"> Field Supervisor
+        <input type="checkbox" role="checkbox" value="Administrator"> Administrator
+        <ul></ul>
+
+
+        <input type="button" name="button" value="Submit">
+    </form>
+
+</div>
+
+<div class="custom-class1">
+
+</div>
+
+<script src="navigation.js"></script>
+
+</body>
+</html>

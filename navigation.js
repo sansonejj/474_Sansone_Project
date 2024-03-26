@@ -43,12 +43,12 @@ document.addEventListener('DOMContentLoaded', function() {
         navDiv.className = 'navigation';
 
         navMenu.forEach(function(item) {
-            var link = document.createElement('a');
-            link.href = item.url;
-            link.textContent = item.title;
 
             // checking if this link has a dropdown, if value is 0 then move on
             if (item.dropdown.length > 0) {
+                var link = document.createElement('btn');
+                link.className = 'dropbtn'
+                link.textContent = item.title;
                 var dropdown = document.createElement('div');
                 dropdown.className = 'dropdown-content';
                 //reference: https://stackoverflow.com/questions/53482604/dropdown-in-a-foreach-loop
@@ -65,6 +65,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 dropdownContainer.appendChild(dropdown);
                 navDiv.appendChild(dropdownContainer);
             } else {
+                var link = document.createElement('a');
+                link.href = item.url;
+                link.textContent = item.title;
                 navDiv.appendChild(link);
             }
         });
